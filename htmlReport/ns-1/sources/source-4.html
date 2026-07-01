@@ -1,0 +1,154 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  <title>Coverage Report > ForKt</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: ForKt (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ForKt</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/20)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/16)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;fun main() {
+<b class="nc">&nbsp;    for (i in 0..10) { //0 ate 10</b>
+&nbsp;
+<b class="nc">&nbsp;        if (i == 5) { // vai do 0 ate o 4 , porque ele para</b>
+&nbsp;            break
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        if (i == 5) { // imprime todos os numero menos 5 , porque encntra ele e pula ele</b>
+&nbsp;            continue
+&nbsp;        }
+<b class="nc">&nbsp;        print(&quot;$i &quot;)</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    for (i in 0..20) {</b>
+<b class="nc">&nbsp;        for (j in 0 .. 5) { //imprime do 0 ao 5, 20 vezes</b>
+<b class="nc">&nbsp;            println(&quot;j: $j &quot;)</b>
+&nbsp;        }
+<b class="nc">&nbsp;        println()</b>
+<b class="nc">&nbsp;        print(&quot;i: $i &quot;)</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    for (i in 0..20 step 2) { //pula de 2 em 2</b>
+<b class="nc">&nbsp;        print(&quot;$i &quot;)</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    for (i in 20 downTo 0 step 5) { // step = pula de 5 em 5 , downTo = do 20 ao 0</b>
+<b class="nc">&nbsp;        print(&quot;$i &quot;)</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    val str = &quot;Programacao Kotlin&quot;</b>
+<b class="nc">&nbsp;    for (j in str) {</b>
+<b class="nc">&nbsp;        print(j)</b>
+&nbsp;    }
+&nbsp;//
+&nbsp;//    for (x = 0; x &lt;= 10; x++ ) {
+&nbsp;//
+&nbsp;//    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2026-06-26 15:39</div>
+</div>
+</body>
+</html>

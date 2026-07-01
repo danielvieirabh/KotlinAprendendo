@@ -12,7 +12,7 @@ fun main() {
 
 fun portariaEvento(idade: Int, convite: String, codigoConvite: String ) : String {
     if (idade >= 18) {
-        if ((convite == "luxo" || convite == "premium" && codigoConvite.startsWith("XL") || (convite == "comum" && codigoConvite.startsWith("XT")))) {
+        if ((convite == "luxo" && codigoConvite.startsWith("XL") || convite == "premium" && codigoConvite.startsWith("XL") || (convite == "comum" && codigoConvite.startsWith("XT")))) {
             return  "Acesso permitido seu bucetudo"
         }
         else {
@@ -22,7 +22,6 @@ fun portariaEvento(idade: Int, convite: String, codigoConvite: String ) : String
     else {
         return "Acesso negado. Menores de idade não sao permitidos!"
     }
-
 }
 
 

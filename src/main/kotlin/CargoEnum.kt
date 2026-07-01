@@ -1,4 +1,5 @@
-enum class Cargo {
+enum class CargoEnum {
     DIRETOR,
     GERENTE
 }
+
