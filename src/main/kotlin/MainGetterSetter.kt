@@ -31,7 +31,7 @@ fun main() {
    // apply (aplicar)
     p.nome = "Daniel"
     // ou
-    p.apply { // vou aplicar os seguintes valores 
+    p.apply { // vou aplicar os seguintes valores
         nome = "alteracao de nome"
         doc = "Daniel"
     }
