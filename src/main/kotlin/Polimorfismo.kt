@@ -23,4 +23,11 @@ fun main() {
     //POlimorfismo aqui , espera varias formas
     imprimeValorBonus(Gerente())
     imprimeValorBonus(Analista())
+
+    imprimeValorBonus(object : Funcionario {
+        override fun calculaBonus(): Float {
+            return 0F
+        }
+    })
+
 }
